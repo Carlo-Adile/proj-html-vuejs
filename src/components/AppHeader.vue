@@ -5,7 +5,7 @@ import HeaderNavbar from './HeaderNavbar.vue';
 
 export default {
   name: "AppHeader",
-  data () {
+  data() {
     return {}
   },
   components: {
@@ -16,14 +16,25 @@ export default {
 </script>
 
 <template>
-  <div>
-    Hello World
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        Hello World
+      </div>
+      <div class="col-6">
+        <HeaderPromo />
+      </div>
+      <div class="col-6">
+        
+        <HeaderNavbar />
+      </div>
 
-    <HeaderPromo />
-    <HeaderNavbar />
+    </div>
+    
+
+    
+    
   </div>
 </template>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
