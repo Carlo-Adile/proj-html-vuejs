@@ -13,15 +13,15 @@ export default {
     <div class="my_container_sm debug">
       <div class="row align-items-center">
         <!-- caption -->
-        <div class="col-6">
+        <div class="col-6 p-0">
           <p>Starts TOMORROW Our biggest event of the year...</p>
         </div>
         <!-- clock -->
-        <div class="col-3">
+        <div class="col-3 p-0">
           <i class="fa-regular fa-clock"></i>
           <span> 00 : 00 : 00 : 00</span>
         </div>
-        <div class="col-3">
+        <div class="col-3 p-0">
           <a class="btn btn-primary" href="#" role="button">Get ticket</a>
         </div>
       </div>

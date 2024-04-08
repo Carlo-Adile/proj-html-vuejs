@@ -1,13 +1,17 @@
 @mixin mixin_container_sm{
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  
 }
 
 @mixin mixin_container_lg{
   width: 80%;
   margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  
+}
+
+@mixin mixin_container_xl{
+  width: 85%;
+  margin: 0 auto;
+  
 }
