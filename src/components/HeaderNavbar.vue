@@ -72,6 +72,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import '../assets/scss/colors.scss';
+@import '../assets/scss/structure.scss';
+
 * {
   margin: 0 auto;
   text-align: center;
@@ -82,10 +85,7 @@ export default {
 }
 
 .my_container_lg {
-  width: 80%;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  @include mixin_container_lg;
 
   .row{
     height: 60px;

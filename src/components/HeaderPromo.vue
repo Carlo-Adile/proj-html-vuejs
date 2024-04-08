@@ -33,6 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 @import '../assets/scss/colors.scss';
+@import '../assets/scss/structure.scss';
 
 * {
   margin: 0 auto;
@@ -50,10 +51,7 @@ export default {
 }
 
 .my_container_sm {
-  width: 50%;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
+  @include mixin_container_sm;
 
   .row {
     height: 40px;

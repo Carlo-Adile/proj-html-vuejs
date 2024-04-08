@@ -1,0 +1,13 @@
+@mixin mixin_container_sm{
+  width: 50%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@mixin mixin_container_lg{
+  width: 80%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
