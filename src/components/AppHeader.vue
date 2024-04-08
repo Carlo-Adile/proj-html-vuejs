@@ -16,16 +16,20 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid">
+  <div class="container-sm">
     <div class="row">
       <div class="col-6">
         Hello World
       </div>
+      <div class="col-2">
+        Hi
+      </div>
+
       <div class="col-6">
         <HeaderPromo />
       </div>
+
       <div class="col-6">
-        
         <HeaderNavbar />
       </div>
 
@@ -37,4 +41,10 @@ export default {
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#my_row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+</style>
