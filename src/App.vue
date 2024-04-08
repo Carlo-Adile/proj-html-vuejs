@@ -25,6 +25,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+*{
+  margin: 0 auto;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

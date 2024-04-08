@@ -16,7 +16,11 @@ export default {
 </script>
 
 <template>
-  <div class="container-sm">
+
+<HeaderPromo />
+<HeaderNavbar />
+
+  <!-- <div class="container-sm">
     <div class="row">
       <div class="col-6">
         Hello World
@@ -38,7 +42,7 @@ export default {
 
     
     
-  </div>
+  </div> -->
 </template>
 
 <style lang="scss" scoped>
