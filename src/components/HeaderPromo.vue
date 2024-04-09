@@ -39,8 +39,9 @@ export default {
   margin: 0 auto;
   text-align: center;
   background-color: $secondary;
-}
-
+  color: $regular;
+} 
+ 
 /* .debug {
   border: 1px dashed black;
 } */
@@ -69,7 +70,6 @@ export default {
     font-weight: 500;
     background-color: $btn;
     width: 150px;
-    
   }
 }
 </style>

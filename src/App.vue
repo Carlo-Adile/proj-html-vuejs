@@ -25,6 +25,9 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import '../src/assets/scss/colors.scss';
+@import '../src/assets/scss/structure.scss';
+
 *{
   padding: 0;
   margin: 0 auto;

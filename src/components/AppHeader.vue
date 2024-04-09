@@ -23,5 +23,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import '../assets/scss/colors.scss';
+@import '../assets/scss/structure.scss';
 
 </style>
