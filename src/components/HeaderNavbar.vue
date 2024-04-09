@@ -8,16 +8,18 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg p-0 debug">
+  <nav class="navbar navbar-expand-lg p-0">
     <div class="my_container_lg">
-      <div class="row align-items-center">
+      <div class="row align-items-center debug">
         <!-- navbar brand -->
-      <div class="col-1">
-        <a href="#" class="navbar-brand">Navbar</a>
+      <div class="col-2 debug">
+        <a href="#" class="navbar-brand">
+          <img src="../assets/images/dark-logo.png" alt="Maxcoach logo" >
+        </a>
       </div>
 
       <!-- dropdown menu -->
-      <div class="col-6">
+      <div class="col-8">
         <ul class="navbar-nav">
           <li class="nav-item dropdown">
             <a href="" class="nav-link dropdown-toggle">Home</a>
@@ -41,7 +43,7 @@ export default {
       </div>
 
       <!-- social icons -->
-      <div class="col-1">
+      <div class="col-2">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -80,9 +82,9 @@ export default {
   text-align: center;
 }
 
-/* .debug {
+.debug {
   border: 1px dashed black;
-} */
+}
 
 .my_container_lg {
   @include mixin_container_lg;
@@ -90,5 +92,11 @@ export default {
   .row{
     height: 60px;
   }
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 </style>

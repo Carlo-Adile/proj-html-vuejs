@@ -1,7 +1,6 @@
 @mixin mixin_container_sm{
   width: 60%;
   margin: 0 auto;
-  
 }
 
 @mixin mixin_container_lg{
@@ -17,4 +16,19 @@
 @mixin mixin_container_xxl{
   width: 90%;
   margin: 0 auto;
+}
+
+@mixin align_middle{
+  :nth-child(1){
+    justify-content: right;
+    /* text-align: right; */
+  }
+  :nth-child(2){
+    justify-content: center;
+    
+  }
+  :nth-child(3){
+    justify-content: left;
+    text-align: center;
+  }
 }

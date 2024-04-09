@@ -13,7 +13,7 @@ export default {
     <div class="my_container_sm debug">
       <div class="row align-items-center">
         <!-- caption -->
-        <div class="col-6 p-0">
+        <div class="col p-0">
           <p>Starts TOMORROW Our biggest event of the year...</p>
         </div>
         <!-- clock -->
@@ -22,7 +22,7 @@ export default {
           <span> 00 : 00 : 00 : 00</span>
         </div>
         <div class="col-3 p-0">
-          <a class="btn btn-primary" href="#" role="button">Get ticket</a>
+          <a class="btn" href="#" role="button">Get ticket</a>
         </div>
       </div>
 
@@ -45,16 +45,31 @@ export default {
   border: 1px dashed black;
 } */
 
-#my_header_promo{
+#my_header_promo {
   width: 100%;
   background-color: $secondary;
 }
 
 .my_container_sm {
   @include mixin_container_sm;
+  font-weight: 500;
 
   .row {
-    height: 40px;
+    height: 50px;
+
+    &:nth-child(1) {
+      p {
+        font-weight: normal;
+        text-align: right;
+      }
+    }
+  }
+  .btn {
+    color: white;
+    font-weight: 500;
+    background-color: $btn;
+    width: 150px;
+    
   }
 }
 </style>
