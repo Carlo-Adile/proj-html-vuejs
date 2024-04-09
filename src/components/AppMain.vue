@@ -9,6 +9,7 @@ export default {
 
 <template>
   <div id="app_main">
+
     <!-- prima sezione: presentazione -->
     <section id="my_first_section" class="py-4">
       <div class="my_container_xl debug">
@@ -73,7 +74,7 @@ export default {
       </div>
     </section>
 
-    <!-- terza sezione: caption+bio -->
+    <!-- terza sezione: caption+bio & video -->
     <section id="my_third_section">
       <div class="my_container_sm">
         <div class="row debug">
@@ -89,6 +90,7 @@ export default {
             <p>As an artist and educator for nearly 30 years, I understand what it takes to create.</p>
             <a class="btn btn-primary" href="#" role="button">Get started today</a>
           </div>
+          <!-- video -->
           <div class="col-10 align-self-center border-1 py-4">
             <div id="my_video">
               <a href="#">
@@ -148,8 +150,147 @@ export default {
       </div>
     </section>
 
+    <!-- quinta sezione: artist coaching -->
     <section id="my_fifth_section" class="py-4">
-      
+      <div class="my_container_xl">
+        <div class="row debug">
+          <div class="col-12 my-4">
+            <h3>Artist coaching</h3>
+            <h4>Latest Online Courses</h4>
+          </div>
+          <div class="col-3">
+            <!-- card del corso -->
+            <div class="card border-0 rounded-0 mb-3">
+              <img src="../assets/images/artist-course-08-480x480.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <span>$18.00</span>
+                <h5>The Acrylic Painting Academy</h5>
+                <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
+                <span><i class="fa-regular fa-user"></i> 50 Students </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- card del corso -->
+            <div class="card border-0 mb-3">
+              <img src="../assets/images/artist-course-07-480x480.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <span>$18.00</span>
+                <h5>The Acrylic Painting Academy</h5>
+                <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
+                <span><i class="fa-regular fa-user"></i> 50 Students </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- card del corso -->
+            <div class="card border-0 mb-3">
+              <img src="../assets/images/artist-course-06-480x480.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <span>$18.00</span>
+                <h5>The Acrylic Painting Academy</h5>
+                <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
+                <span><i class="fa-regular fa-user"></i> 50 Students </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- card del corso -->
+            <div class="card border-0 mb-3">
+              <img src="../assets/images/artist-course-05-480x480.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <span>$18.00</span>
+                <h5>The Acrylic Painting Academy</h5>
+                <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
+                <span><i class="fa-regular fa-user"></i> 50 Students </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- card del corso -->
+            <div class="card border-0 mb-3">
+              <img src="../assets/images/artist-course-04-480x480.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <span>$18.00</span>
+                <h5>The Acrylic Painting Academy</h5>
+                <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
+                <span><i class="fa-regular fa-user"></i> 50 Students </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- card del corso -->
+            <div class="card border-0 mb-3">
+              <img src="../assets/images/artist-course-03-480x480.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <span>$18.00</span>
+                <h5>The Acrylic Painting Academy</h5>
+                <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
+                <span><i class="fa-regular fa-user"></i> 50 Students </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- card del corso -->
+            <div class="card border-0 mb-3">
+              <img src="../assets/images/artist-course-02-480x480.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <span>$18.00</span>
+                <h5>The Acrylic Painting Academy</h5>
+                <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
+                <span><i class="fa-regular fa-user"></i> 50 Students </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <!-- card del corso -->
+            <div class="card border-0 mb-3">
+              <img src="../assets/images/artist-course-01-480x480.jpg" alt="" class="card-img">
+              <div class="card-body">
+                <span>$18.00</span>
+                <h5>The Acrylic Painting Academy</h5>
+                <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
+                <span><i class="fa-regular fa-user"></i> 50 Students </span>
+              </div>
+            </div>
+          </div>
+          <!-- button -->
+          <div class="col-12">
+            <a class="btn btn-primary" href="#" role="button">View all courses</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- sesta sezione: lets work together -->
+    <section id="my_sixth_section" class="py-4">
+      <div class="my_container_sm">
+        <div class="row debug">
+          <div class="col-12">
+            <h2>Upcoming Events</h2>
+            <h4>Let's Work Together</h4>
+          </div>
+          <div class="col-6 mb-4 debug"></div>
+          <div class="col-6 mb-4 debug"></div>
+          <div class="col-6 debug"></div>
+          <div class="col-6 debug"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- settima sezione: newsletter -->
+    <section id="my_seventh_section" class="py-4">
+      <div class="my_container_sm">
+        <div class="row debug">
+          <div class="col-4">
+            <h4>Newsletter to get in touch</h4>
+          </div>
+          <div class="col-8">
+            <span>Your e-mail</span>
+          </div>
+        </div>
+      </div>
     </section>
 
   </div>
@@ -286,9 +427,34 @@ export default {
   }
 }
 
-#my_fifth_section{
-  .row{
+#my_fifth_section {
+  .row {
+    /* height: 600px; */
+  }
+
+  .card {
+    img {
+      border: none;
+      border-radius: 0;
+    }
+  }
+}
+
+#my_sixth_section {
+  .row {
     height: 600px;
   }
+
+  .col-6 {
+    height: 45%;
+  }
+
+}
+
+#my_seventh_section {
+  .row {
+    height: 200px;
+  }
+
 }
 </style>
