@@ -80,9 +80,9 @@ export default {
   text-align: center;
 }
 
-.debug {
+/* .debug {
   border: 1px dashed black;
-}
+} */
 
 .my_container_lg {
   @include mixin_container_lg;

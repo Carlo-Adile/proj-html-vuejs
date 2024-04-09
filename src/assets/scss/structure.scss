@@ -7,11 +7,14 @@
 @mixin mixin_container_lg{
   width: 80%;
   margin: 0 auto;
-  
 }
 
 @mixin mixin_container_xl{
   width: 85%;
   margin: 0 auto;
-  
+}
+
+@mixin mixin_container_xxl{
+  width: 90%;
+  margin: 0 auto;
 }

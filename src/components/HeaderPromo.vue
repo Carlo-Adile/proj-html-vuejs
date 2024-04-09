@@ -41,9 +41,9 @@ export default {
   background-color: $secondary;
 }
 
-.debug {
+/* .debug {
   border: 1px dashed black;
-}
+} */
 
 #my_header_promo{
   width: 100%;
