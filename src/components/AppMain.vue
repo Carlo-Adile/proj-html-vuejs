@@ -12,8 +12,18 @@ export default {
 
     <!-- prima sezione: presentazione -->
     <section id="my_first_section" class="my-4 py-4">
+      <div id="bg_clip_left"></div>
+      <div id="bg_clip_right"></div>
+      <div id="my_buttons">
+        <ul>
+          <li><i class="fa-solid fa-ruler"></i></li>
+          <li><i class="fa-regular fa-life-ring"></i></li>
+          <li><i class="fa-solid fa-book"></i></li>
+          <li><i class="fa-solid fa-cart-shopping"></i></li>
+        </ul>
+      </div>
       <div class="my_container_xl debug">
-        <div class="row align-items-center px-4">
+        <div class="row align-items-center px-4 my-4">
           <!-- left: pic showcase -->
           <div class="my_col_sm debug" id="my_pics_left">
             <div>
@@ -45,7 +55,7 @@ export default {
 
     <!-- seconda sezione: artist coaching -->
     <section id="my_second_section" class="my-4 py-4">
-      <div class="my_container_sm">
+       <div class="my_container_sm">
         <div class="row debug">
           <div class="col-12 mb-4">
             <h1>Artist coaching</h1>
@@ -311,9 +321,9 @@ export default {
               <img src="../assets/images/artist-blog-01-480x356.jpg" alt="" class="card-img">
               <div class="card-body mb-2">
                 <p>ARTIST</p>
-                <h5>Brush Strokes Energize Trees Paintings</h5>
+                <h5>Pocket-Sized Notebooks Hold Miniature Painting</h5>
                 <span><i class="fa-regular fa-calendar"></i> May 15, 2020</span>
-                <span><i class="fa-regular fa-eye"></i> 688 views</span>
+                <span><i class="fa-regular fa-eye"></i> 603 views</span>
               </div>
             </div>
           </div>
@@ -356,12 +366,12 @@ export default {
             <div class="my_text">
               <ul>
                 <li>
-                  <p>NOV 22, 2020</p>
+                  <p>OCT 10, 2020</p>
                 </li>
                 <li>
-                  <h5>Storytelling Workshop</h5>
+                  <h5>Painting Art Contest 2020</h5>
                 </li>
-                <li><span><i class="fa-solid fa-location-dot"></i> Texas, US</span></li>
+                <li><span><i class="fa-solid fa-location-dot"></i> New York, US</span></li>
               </ul>
             </div>
           </div>
@@ -369,12 +379,12 @@ export default {
             <div class="my_text_right">
               <ul>
                 <li>
-                  <p>NOV 22, 2020</p>
+                  <p>BOV 23, 2020</p>
                 </li>
                 <li>
-                  <h5>Storytelling Workshop</h5>
+                  <h5>International Art Fair</h5>
                 </li>
-                <li><span><i class="fa-solid fa-location-dot"></i> Texas, US</span></li>
+                <li><span><i class="fa-solid fa-location-dot"></i> hamburg, Germany</span></li>
               </ul>
             </div>
             <div class="my_img">
@@ -385,16 +395,16 @@ export default {
             <div class="my_text_right">
               <ul>
                 <li>
-                  <p>NOV 22, 2020</p>
+                  <p>DEC 15, 2020</p>
                 </li>
                 <li>
-                  <h5>Storytelling Workshop</h5>
+                  <h5>Street Performance: Call for Artist</h5>
                 </li>
-                <li><span><i class="fa-solid fa-location-dot"></i> Texas, US</span></li>
+                <li><span><i class="fa-solid fa-location-dot"></i> Illinois, US</span></li>
               </ul>
             </div>
             <div class="my_img">
-              <img src="../assets/images/artist-event-01-250x300.jpg" alt="">
+              <img src="../assets/images/artist-event-02-250x300.jpg" alt="">
             </div>
           </div>
         </div>
@@ -464,21 +474,60 @@ export default {
 }
 
 #my_first_section {
+  position: relative;
   width: 100%;
   background-color: $secondary;
   text-align: center;
 
   .row {
-    height: 500px;
+    height: 550px;
   }
 
   .my_col_sm {
     flex-basis: 30%;
-    height: 80%;
+    height: 60%;
   }
 
   .my_col_md {
     flex-basis: 40%;
+  }
+  #my_buttons{
+    position: absolute;
+    right: 0;
+    top: 10%;
+    background-color: white;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    border-radius: 5px;
+    ul,li{
+      margin-bottom: 1rem;
+      list-style: none;
+      i{
+        font-size: 1.4rem;
+        color: $regular;
+      }
+    }
+  }
+  #bg_clip_right{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../src/assets/images/artist-shape-01-600x577.png'),
+    url('src/assets/images/artist-shape-04-127x300.png')
+    ;
+    background-size: 50% 90%, auto;
+    background-repeat: no-repeat;
+    background-position-x: 85%, 85%;
+    background-position-y: 10%, 20%;
+  }
+  #bg_clip_left{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../src/assets/images/artist-hero-image-03-204x300.png'), url('../src/assets/images/artist-shape-03-201x300.png');
+    background-size: auto, 15% auto;
+    background-repeat: no-repeat;
+    background-position-x: 30%, 10%;
+    background-position-y: 75%, 20%;
   }
 
   #my_pics_left {
@@ -508,8 +557,8 @@ export default {
 
     :nth-child(2) {
       position: absolute;
-      bottom: 15px;
-      left: 10px;
+      bottom: 80px;
+      left: 100px;
       z-index: 2;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
       height: 200px;
@@ -611,6 +660,10 @@ export default {
 
 #my_sixth_section {
   background-color: $tertiary;
+  background-image: url('../src/assets/images/maxcoach-shape-03.png');
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
+  background-position: center;
 
   .row {
     height: 900px;
