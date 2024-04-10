@@ -119,7 +119,7 @@ export default {
   @include mixin_container_md;
 
   .row {
-    height: 300px;
+    height: 250px;
   }
   h5 {
     padding-bottom: 0.5rem;

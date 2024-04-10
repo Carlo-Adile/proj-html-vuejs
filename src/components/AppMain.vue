@@ -55,7 +55,8 @@ export default {
 
     <!-- seconda sezione: artist coaching -->
     <section id="my_second_section" class="my-4 py-4">
-       <div class="my_container_sm">
+      <div id="my_bg"></div>
+      <div class="my_container_sm">
         <div class="row debug">
           <div class="col-12 mb-4">
             <h1>Artist coaching</h1>
@@ -285,10 +286,11 @@ export default {
     <!--  !!!!!!!!!!!!!!
       sesta sezione: artist and tips -->
     <section id="my_sixth_section" class="my-4 py-4">
+      <div id="my_bg"></div>
       <div class="my_container_md">
         <div class="row debug">
           <!-- header -->
-          <div class="col-12 my-4">
+          <div class="col-12 my-4" >
             <h1>Artists and Tips</h1>
             <h3>Latest From The Blog</h3>
           </div>
@@ -491,35 +493,40 @@ export default {
   .my_col_md {
     flex-basis: 40%;
   }
-  #my_buttons{
+
+  #my_buttons {
     position: absolute;
     right: 0;
     top: 10%;
     background-color: white;
     padding: 1rem 0.5rem 0.5rem 0.5rem;
     border-radius: 5px;
-    ul,li{
+
+    ul,
+    li {
       margin-bottom: 1rem;
       list-style: none;
-      i{
+
+      i {
         font-size: 1.4rem;
         color: $regular;
       }
     }
   }
-  #bg_clip_right{
+
+  #bg_clip_right {
     position: absolute;
     height: 100%;
     width: 100%;
     background-image: url('../src/assets/images/artist-shape-01-600x577.png'),
-    url('src/assets/images/artist-shape-04-127x300.png')
-    ;
-    background-size: 50% 90%, auto;
+      url('src/assets/images/artist-shape-04-127x300.png');
+    background-size: 40% 95%, auto;
     background-repeat: no-repeat;
     background-position-x: 85%, 85%;
-    background-position-y: 10%, 20%;
+    background-position-y: 0%, 20%;
   }
-  #bg_clip_left{
+
+  #bg_clip_left {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -586,10 +593,18 @@ export default {
 }
 
 #my_second_section {
-  background-image: url('../src/assets/images/maxcoach-shape-03.png');
-  background-size: 100% 75%;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
+
+  #my_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+    background-image: url('../src/assets/images/maxcoach-shape-03.png');
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
   .row {
     height: 400px;
@@ -659,11 +674,19 @@ export default {
 }
 
 #my_sixth_section {
-  background-color: $tertiary;
-  background-image: url('../src/assets/images/maxcoach-shape-03.png');
-  background-size: 100% 75%;
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
+  #my_bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.5;
+    background-color: $tertiary;
+    background-image: url('../src/assets/images/maxcoach-shape-03.png');
+    background-size: 100% 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
 
   .row {
     height: 900px;
@@ -673,7 +696,8 @@ export default {
     @include tips;
     padding-top: 0rem;
   }
-  #my_right_card{
+
+  #my_right_card {
     @include tips;
     padding-bottom: 7rem;
   }
@@ -709,12 +733,15 @@ export default {
       }
     }
   }
-  #my_tips_footer{
-    p{
+
+  #my_tips_footer {
+    p {
       text-align: center;
       font-weight: 500;
     }
-    span, i{
+
+    span,
+    i {
       color: $marked;
       text-decoration: underline;
     }
