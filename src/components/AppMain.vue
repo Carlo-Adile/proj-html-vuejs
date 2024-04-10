@@ -28,7 +28,9 @@ export default {
             <h1>Hello, I'm Martin</h1>
             <h3>Artist Coaching And Mentoring</h3>
             <h3 class="mb-2">Might Be for You.</h3>
-            <a class="btn" href="#" role="button">Get started today</a>
+            <a class="btn" href="#" role="button">
+              <p>Get started today</p>
+            </a>
           </div>
           <!-- right: pic personale -->
           <div class="my_col_sm debug" id="my_pics_right">
@@ -109,7 +111,7 @@ export default {
 
     <!-- quarta sezione: testimonials -->
     <section id="my_forth_section" class="my-4 py-4">
-      
+
       <div class="my_container_xxl">
         <div class="row debug">
           <div class="col-12">
@@ -117,38 +119,38 @@ export default {
             <h3>Why do people love me?</h3>
           </div>
           <div class="col-4">
-            <div class="card">
+            <div class="card inactive">
               <h5>It's a choice of quality for people with special needs</h5>
               <p>I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make
                 things right and shine. Maxchoach guys just got me.</p>
-              <div>
-                <img src="" alt="">
-                <h5>Florence Thomas</h5>
+              <div class="my_info">
+                <img src="../assets/images/artist-testimonial-avatar-02.jpg" alt="">
+                <h5>Florence Themes</h5>
                 <p>/ Multimedia Admin</p>
               </div>
             </div>
           </div>
           <div class="col-4">
             <div class="card">
-              <h5>It's a choice of quality for people with special needs</h5>
-              <p>I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make
-                things right and shine. Maxchoach guys just got me.</p>
-              <div>
-                <img src="" alt="">
-                <h5>Florence Thomas</h5>
-                <p>/ Multimedia Admin</p>
+              <h5>High level of efficiency and scientific teaching methods</h5>
+              <p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p>
+              <div class="my_info">
+                <img src="../assets/images/artist-testimonial-avatar-04.jpg" alt="">
+                <h5>Mina Hollace</h5>
+                <p>/ Freelancer</p>
               </div>
             </div>
           </div>
           <div class="col-4">
-            <div class="card">
-              <h5>It's a choice of quality for people with special needs</h5>
-              <p>I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make
-                things right and shine. Maxchoach guys just got me.</p>
+            <div class="card inactive">
               <div>
-                <img src="" alt="">
-                <h5>Florence Thomas</h5>
-                <p>/ Multimedia Admin</p>
+                <h5>It's a choice of quality for people with special needs</h5>
+                <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
+              </div>
+              <div class="my_info">
+                <img src="../assets/images/artist-testimonial-avatar-01.jpg" alt="">
+                <h5>Madley Pendor</h5>
+                <p>/ IT Specialist</p>
               </div>
             </div>
           </div>
@@ -157,19 +159,19 @@ export default {
     </section>
 
     <!-- quinta sezione: artist coaching con cards -->
-    <section id="my_fifth_section" class="py-4">
+    <section id="my_fifth_section" class="my-4 py-4">
       <div class="my_container_xl">
         <div class="row debug">
           <div class="col-12 my-4">
-            <h3>Artist coaching</h3>
-            <h4>Latest Online Courses</h4>
+            <h1>Artist coaching</h1>
+            <h3>Latest Online Courses</h3>
           </div>
           <div class="col-3">
             <!-- card del corso -->
             <div class="card border-0 rounded-0 mb-3">
               <img src="../assets/images/artist-course-08-480x480.jpg" alt="" class="card-img">
               <div class="card-body">
-                <span>$18.00</span>
+                <p>$18.00</p>
                 <h5>The Acrylic Painting Academy</h5>
                 <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
                 <span><i class="fa-regular fa-user"></i> 50 Students </span>
@@ -181,7 +183,7 @@ export default {
             <div class="card border-0 mb-3">
               <img src="../assets/images/artist-course-07-480x480.jpg" alt="" class="card-img">
               <div class="card-body">
-                <span>$18.00</span>
+                <p>$18.00</p>
                 <h5>The Acrylic Painting Academy</h5>
                 <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
                 <span><i class="fa-regular fa-user"></i> 50 Students </span>
@@ -193,7 +195,7 @@ export default {
             <div class="card border-0 mb-3">
               <img src="../assets/images/artist-course-06-480x480.jpg" alt="" class="card-img">
               <div class="card-body">
-                <span>$18.00</span>
+                <p>$18.00</p>
                 <h5>The Acrylic Painting Academy</h5>
                 <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
                 <span><i class="fa-regular fa-user"></i> 50 Students </span>
@@ -205,7 +207,7 @@ export default {
             <div class="card border-0 mb-3">
               <img src="../assets/images/artist-course-05-480x480.jpg" alt="" class="card-img">
               <div class="card-body">
-                <span>$18.00</span>
+                <p>$18.00</p>
                 <h5>The Acrylic Painting Academy</h5>
                 <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
                 <span><i class="fa-regular fa-user"></i> 50 Students </span>
@@ -217,7 +219,7 @@ export default {
             <div class="card border-0 mb-3">
               <img src="../assets/images/artist-course-04-480x480.jpg" alt="" class="card-img">
               <div class="card-body">
-                <span>$18.00</span>
+                <p>$18.00</p>
                 <h5>The Acrylic Painting Academy</h5>
                 <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
                 <span><i class="fa-regular fa-user"></i> 50 Students </span>
@@ -229,7 +231,7 @@ export default {
             <div class="card border-0 mb-3">
               <img src="../assets/images/artist-course-03-480x480.jpg" alt="" class="card-img">
               <div class="card-body">
-                <span>$18.00</span>
+                <p>$18.00</p>
                 <h5>The Acrylic Painting Academy</h5>
                 <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
                 <span><i class="fa-regular fa-user"></i> 50 Students </span>
@@ -241,7 +243,7 @@ export default {
             <div class="card border-0 mb-3">
               <img src="../assets/images/artist-course-02-480x480.jpg" alt="" class="card-img">
               <div class="card-body">
-                <span>$18.00</span>
+                <p>$18.00</p>
                 <h5>The Acrylic Painting Academy</h5>
                 <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
                 <span><i class="fa-regular fa-user"></i> 50 Students </span>
@@ -253,7 +255,7 @@ export default {
             <div class="card border-0 mb-3">
               <img src="../assets/images/artist-course-01-480x480.jpg" alt="" class="card-img">
               <div class="card-body">
-                <span>$18.00</span>
+                <p>$18.00</p>
                 <h5>The Acrylic Painting Academy</h5>
                 <span><i class="fa-regular fa-file-lines"></i> 4 Lessons </span>
                 <span><i class="fa-regular fa-user"></i> 50 Students </span>
@@ -261,32 +263,74 @@ export default {
             </div>
           </div>
           <!-- button -->
-          <div class="col-12">
-            <a class="btn btn-primary" href="#" role="button">View all courses</a>
+          <div class="col-12 d-flex justify-content-center my-4">
+            <a class="btn" href="#" role="button">View all courses</a>
           </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- sesta sezione: lets work together -->
-    <section id="my_sixth_section" class="py-4">
-      <div class="my_container_sm">
-        <div class="row debug">
-          <div class="col-12">
-            <h2>Upcoming Events</h2>
-            <h4>Let's Work Together</h4>
-          </div>
-          <div class="col-6 mb-4 debug"></div>
-          <div class="col-6 mb-4 debug"></div>
-          <div class="col-6 debug"></div>
-          <div class="col-6 debug"></div>
         </div>
       </div>
     </section>
 
-    <!-- settima sezione: newsletter -->
+    <!--  !!!!!!!!!!!!!!
+      sesta sezione: artist and tips -->
+    <section>
+
+    </section>
+
+
+    <!-- settima sezione: lets work together -->
     <section id="my_seventh_section" class="py-4">
+      <div class="my_container_lg">
+        <div class="row debug">
+          <div class="col-12 mb-4">
+            <h1>Upcoming Events</h1>
+            <h2>Let's Work Together</h2>
+          </div>
+          <div class="col-6 mb-4 d-flex debug">
+            <div class="my_img">
+              <img src="../assets/images/artist-event-04-250x300.jpg" alt="">
+            </div>
+            <div class="my_text">
+              <p>NOV 22, 2020</p>
+              <h5>Storytelling Workshop</h5>
+              <span><i class="fa-solid fa-location-dot"></i> Texas, US</span>
+            </div>
+          </div>
+          <div class="col-6 mb-4 d-flex debug">
+            <div class="my_img">
+              <img src="../assets/images/artist-event-03-250x300.jpg" alt="">
+            </div>
+            <div class="my_text">
+              <p>NOV 22, 2020</p>
+              <h5>Storytelling Workshop</h5>
+              <span><i class="fa-solid fa-location-dot"></i> Texas, US</span>
+            </div>
+          </div>
+          <div class="col-6 mt-4 d-flex debug">
+            <div class="my_text_right">
+              <p>NOV 22, 2020</p>
+              <h5>Storytelling Workshop</h5>
+              <span><i class="fa-solid fa-location-dot"></i> Texas, US</span>
+            </div>
+            <div class="my_img">
+              <img src="../assets/images/artist-event-02-250x300.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-6 mt-4 d-flex debug">
+            <div class="my_text_right">
+              <p>NOV 22, 2020</p>
+              <h5>Storytelling Workshop</h5>
+              <span><i class="fa-solid fa-location-dot"></i> Texas, US</span>
+            </div>
+            <div class="my_img">
+              <img src="../assets/images/artist-event-01-250x300.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ottava sezione: newsletter -->
+    <section id="my_eighth_section" class="py-4">
       <div class="my_container_sm">
         <div class="row debug">
           <div class="col-4">
@@ -309,23 +353,19 @@ export default {
 @import '../assets/scss/variables.scss';
 
 * {
+  @include various;
   margin: 0 auto;
-  text-align: center;
+  /* text-align: center; */
   /* font-family: sans-serif; */
 }
 
-.debug {
+/* .debug {
   border: 1px dashed black;
-}
-
-h1 {
-  @include artistic;
-}
+} */
 
 .btn {
   @include button;
 }
-
 
 #app_main {
   width: 100%;
@@ -333,6 +373,10 @@ h1 {
 
 .my_container_sm {
   @include mixin_container_sm;
+}
+
+.my_container_lg {
+  @include mixin_container_lg;
 }
 
 .my_container_xl {
@@ -346,17 +390,15 @@ h1 {
 #my_first_section {
   width: 100%;
   background-color: $secondary;
-
+  text-align: center;
 
   .row {
     height: 500px;
   }
-
   .my_col_sm {
     flex-basis: 30%;
     height: 80%;
   }
-
   .my_col_md {
     flex-basis: 40%;
   }
@@ -385,7 +427,6 @@ h1 {
         position: relative;
       }
     }
-
     :nth-child(2) {
       position: absolute;
       bottom: 15px;
@@ -394,7 +435,6 @@ h1 {
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
       height: 200px;
       width: 155px;
-
       img {
         width: 100%;
         height: 100%;
@@ -402,7 +442,6 @@ h1 {
       }
     }
   }
-
   #my_pics_right {
     position: relative;
     height: 100%;
@@ -431,9 +470,6 @@ h1 {
 #my_third_section {
   position: relative;
   z-index: 1;
-  .row {
-    /* height: 700px; */
-  }
 
   #my_video {
     width: 100%;
@@ -463,41 +499,39 @@ h1 {
   background-color: $secondary;
   position: relative;
   z-index: 1;
+  @include testimonial;
 
   .row {
-    height: 500px;
+    height: 400px;
+  }
+  .inactive {
+    opacity: 0.7;
   }
 }
 
 #my_fifth_section {
+  @include courses;
 
   .row {
     /* height: 600px; */
   }
-
-  .card {
-    img {
-      border: none;
-      border-radius: 0;
-    }
+  .btn{
+    text-align: center;
   }
-}
-
-#my_sixth_section {
-  .row {
-    height: 600px;
-  }
-
-  .col-6 {
-    height: 45%;
-  }
-
 }
 
 #my_seventh_section {
+   @include events;
+
+  .col-6 {
+    margin-top: 1rem;
+    padding: 0;
+  }
+}
+
+#my_eighth_section {
   .row {
     height: 200px;
   }
-
 }
 </style>
