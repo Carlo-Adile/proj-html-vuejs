@@ -28,7 +28,7 @@ export default {
             <h1>Hello, I'm Martin</h1>
             <h3>Artist Coaching And Mentoring</h3>
             <h3 class="mb-2">Might Be for You.</h3>
-            <a class="btn" href="#" role="button">
+            <a class="btn my-4" href="#" role="button">
               <p>Get started today</p>
             </a>
           </div>
@@ -47,12 +47,12 @@ export default {
     <section id="my_second_section" class="my-4 py-4">
       <div class="my_container_sm">
         <div class="row debug">
-          <div class="col-12 mb-3">
+          <div class="col-12 mb-4">
             <h1>Artist coaching</h1>
             <h4>I understand what it takes to create.</h4>
             <h4>I can help you with</h4>
           </div>
-          <div class="col-3 align-self-end pb-4">
+          <div class="col-3 align-self-end my-2 pb-4">
             <img src="../assets/images/artist-box-image-01.png" alt="">
             <h5>Online Courses</h5>
             <p>Online art coaching now offers you a very powerful way to redesign your artist mind.</p>
@@ -133,7 +133,8 @@ export default {
           <div class="col-4">
             <div class="card">
               <h5>High level of efficiency and scientific teaching methods</h5>
-              <p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.</p>
+              <p>I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from
+                the syllabus. Great study portal for people like me.</p>
               <div class="my_info">
                 <img src="../assets/images/artist-testimonial-avatar-04.jpg" alt="">
                 <h5>Mina Hollace</h5>
@@ -145,7 +146,8 @@ export default {
             <div class="card inactive">
               <div>
                 <h5>It's a choice of quality for people with special needs</h5>
-                <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.</p>
+                <p>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors
+                  are smart and professional when dealing with students.</p>
               </div>
               <div class="my_info">
                 <img src="../assets/images/artist-testimonial-avatar-01.jpg" alt="">
@@ -272,14 +274,15 @@ export default {
 
     <!--  !!!!!!!!!!!!!!
       sesta sezione: artist and tips -->
-    <section>
+    <section id="my_sixth_section">
+      <div class="row debug">
 
+      </div>
     </section>
 
-
-    <!-- settima sezione: lets work together -->
-    <section id="my_seventh_section" class="py-4">
-      <div class="my_container_lg">
+    <!-- settima sezione: events & lets work together -->
+    <section id="my_seventh_section" class="my-4 py-4">
+      <div class="my_container_md">
         <div class="row debug">
           <div class="col-12 mb-4">
             <h1>Upcoming Events</h1>
@@ -290,9 +293,15 @@ export default {
               <img src="../assets/images/artist-event-04-250x300.jpg" alt="">
             </div>
             <div class="my_text">
-              <p>NOV 22, 2020</p>
-              <h5>Storytelling Workshop</h5>
-              <span><i class="fa-solid fa-location-dot"></i> Texas, US</span>
+              <ul>
+                <li>
+                  <p>NOV 22, 2020</p>
+                </li>
+                <li>
+                  <h5>Storytelling Workshop</h5>
+                </li>
+                <li><span><i class="fa-solid fa-location-dot"></i> Texas, US</span></li>
+              </ul>
             </div>
           </div>
           <div class="col-6 mb-4 d-flex debug">
@@ -300,16 +309,28 @@ export default {
               <img src="../assets/images/artist-event-03-250x300.jpg" alt="">
             </div>
             <div class="my_text">
-              <p>NOV 22, 2020</p>
-              <h5>Storytelling Workshop</h5>
-              <span><i class="fa-solid fa-location-dot"></i> Texas, US</span>
+              <ul>
+                <li>
+                  <p>NOV 22, 2020</p>
+                </li>
+                <li>
+                  <h5>Storytelling Workshop</h5>
+                </li>
+                <li><span><i class="fa-solid fa-location-dot"></i> Texas, US</span></li>
+              </ul>
             </div>
           </div>
           <div class="col-6 mt-4 d-flex debug">
             <div class="my_text_right">
-              <p>NOV 22, 2020</p>
-              <h5>Storytelling Workshop</h5>
-              <span><i class="fa-solid fa-location-dot"></i> Texas, US</span>
+              <ul>
+                <li>
+                  <p>NOV 22, 2020</p>
+                </li>
+                <li>
+                  <h5>Storytelling Workshop</h5>
+                </li>
+                <li><span><i class="fa-solid fa-location-dot"></i> Texas, US</span></li>
+              </ul>
             </div>
             <div class="my_img">
               <img src="../assets/images/artist-event-02-250x300.jpg" alt="">
@@ -317,9 +338,15 @@ export default {
           </div>
           <div class="col-6 mt-4 d-flex debug">
             <div class="my_text_right">
-              <p>NOV 22, 2020</p>
-              <h5>Storytelling Workshop</h5>
-              <span><i class="fa-solid fa-location-dot"></i> Texas, US</span>
+              <ul>
+                <li>
+                  <p>NOV 22, 2020</p>
+                </li>
+                <li>
+                  <h5>Storytelling Workshop</h5>
+                </li>
+                <li><span><i class="fa-solid fa-location-dot"></i> Texas, US</span></li>
+              </ul>
             </div>
             <div class="my_img">
               <img src="../assets/images/artist-event-01-250x300.jpg" alt="">
@@ -330,14 +357,14 @@ export default {
     </section>
 
     <!-- ottava sezione: newsletter -->
-    <section id="my_eighth_section" class="py-4">
+    <section id="my_eighth_section" class="my-4 py-4">
       <div class="my_container_sm">
         <div class="row debug">
-          <div class="col-4">
-            <h4>Newsletter to get in touch</h4>
+          <div class="col">
+            <h3>Newsletter to get in touch</h3>
           </div>
-          <div class="col-8">
-            <span>Your e-mail</span>
+          <div class="col-8" id="your_email">
+            <span>Your e-mail </span><i class="fa-solid fa-arrow-right"></i>
           </div>
         </div>
       </div>
@@ -375,6 +402,10 @@ export default {
   @include mixin_container_sm;
 }
 
+.my_container_md {
+  @include mixin_container_md;
+}
+
 .my_container_lg {
   @include mixin_container_lg;
 }
@@ -395,10 +426,12 @@ export default {
   .row {
     height: 500px;
   }
+
   .my_col_sm {
     flex-basis: 30%;
     height: 80%;
   }
+
   .my_col_md {
     flex-basis: 40%;
   }
@@ -427,6 +460,7 @@ export default {
         position: relative;
       }
     }
+
     :nth-child(2) {
       position: absolute;
       bottom: 15px;
@@ -435,6 +469,7 @@ export default {
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
       height: 200px;
       width: 155px;
+
       img {
         width: 100%;
         height: 100%;
@@ -442,6 +477,7 @@ export default {
       }
     }
   }
+
   #my_pics_right {
     position: relative;
     height: 100%;
@@ -470,6 +506,7 @@ export default {
 #my_third_section {
   position: relative;
   z-index: 1;
+  text-align: center;
 
   #my_video {
     width: 100%;
@@ -482,6 +519,7 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .wave_bg {
     width: 100%;
     height: 200px;
@@ -492,6 +530,10 @@ export default {
     background-size: 100% 300px;
     background-repeat: no-repeat;
     z-index: -1;
+  }
+
+  img {
+    align-self: center;
   }
 }
 
@@ -504,6 +546,7 @@ export default {
   .row {
     height: 400px;
   }
+
   .inactive {
     opacity: 0.7;
   }
@@ -515,13 +558,22 @@ export default {
   .row {
     /* height: 600px; */
   }
-  .btn{
+
+  .btn {
     text-align: center;
   }
 }
 
+#my_sixth_section {
+  background-color: $tertiary;
+
+  .row {
+    height: 400px;
+  }
+}
+
 #my_seventh_section {
-   @include events;
+  @include events;
 
   .col-6 {
     margin-top: 1rem;
@@ -530,8 +582,10 @@ export default {
 }
 
 #my_eighth_section {
-  .row {
-    height: 200px;
-  }
+  background-color: $newsletter;
+  @include newsletter;
+  height: 200px;
+  display: flex;
+  align-items: center;
 }
 </style>

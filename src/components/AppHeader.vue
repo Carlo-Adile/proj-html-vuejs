@@ -25,4 +25,5 @@ export default {
 @import '../assets/scss/colors.scss';
 @import '../assets/scss/structure.scss';
 
+
 </style>
