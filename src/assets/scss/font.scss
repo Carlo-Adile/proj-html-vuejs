@@ -1,0 +1,10 @@
+@mixin artistic {
+  font-family: "alisha", sans-serif;
+  color: #6ac5f1;
+}
+
+@mixin urbana {
+  font-family: "urbana", sans-serif;
+  font-weight: 600;
+  /* font-style: normal; */
+}

@@ -11,7 +11,7 @@ export default {
   <div id="app_main">
 
     <!-- prima sezione: presentazione -->
-    <section id="my_first_section" class="py-4">
+    <section id="my_first_section" class="my-4 py-4">
       <div class="my_container_xl debug">
         <div class="row align-items-center px-4">
           <!-- left: pic showcase -->
@@ -25,10 +25,10 @@ export default {
           </div>
           <!-- center: small bio -->
           <div class="my_col_md debug">
-            <h3>Hello, I'm Martin</h3>
-            <h4>Artist Coaching And Mentoring</h4>
-            <h4>Might Be for You.</h4>
-            <a class="btn btn-primary" href="#" role="button">Get ticket</a>
+            <h1>Hello, I'm Martin</h1>
+            <h3>Artist Coaching And Mentoring</h3>
+            <h3 class="mb-2">Might Be for You.</h3>
+            <a class="btn" href="#" role="button">Get started today</a>
           </div>
           <!-- right: pic personale -->
           <div class="my_col_sm debug" id="my_pics_right">
@@ -42,30 +42,30 @@ export default {
     </section>
 
     <!-- seconda sezione: artist coaching -->
-    <section id="my_second_section" class="py-4">
+    <section id="my_second_section" class="my-4 py-4">
       <div class="my_container_sm">
         <div class="row debug">
-          <div class="col-12 mb-0">
-            <h3>Artist coaching</h3>
+          <div class="col-12 mb-3">
+            <h1>Artist coaching</h1>
             <h4>I understand what it takes to create.</h4>
             <h4>I can help you with</h4>
           </div>
-          <div class="col-3">
+          <div class="col-3 align-self-end pb-4">
             <img src="../assets/images/artist-box-image-01.png" alt="">
             <h5>Online Courses</h5>
             <p>Online art coaching now offers you a very powerful way to redesign your artist mind.</p>
           </div>
-          <div class="col-3">
+          <div class="col-3 align-self-end pb-0">
             <img src="../assets/images/artist-box-image-02.png" alt="">
             <h5>One to One</h5>
             <p>Getting the necessary clarity about the current state to help you improve your ability.</p>
           </div>
-          <div class="col-3">
+          <div class="col-3 align-self-end pb-4">
             <img src="../assets/images/artist-box-image-03.png" alt="">
             <h5>Anywhere</h5>
             <p>Access to valuable and portable program which allow you to setup and live anywhere you want.</p>
           </div>
-          <div class="col-3">
+          <div class="col-3 align-self-end pb-0">
             <img src="../assets/images/artist-box-image-04.png" alt="">
             <h5>On Time</h5>
             <p>Punctuality is our priority because it's an essential criteria to access a program quality.</p>
@@ -75,20 +75,25 @@ export default {
     </section>
 
     <!-- terza sezione: caption+bio & video -->
-    <section id="my_third_section">
+    <section id="my_third_section" class="my-4 py-4">
+      <div class="wave_bg"></div>
       <div class="my_container_sm">
         <div class="row debug">
           <div class="col-4">
-            <h2>I coach and mentor visual artists, like you, to Create like You Mean It</h2>
-            <h4>Martin Garrix</h4>
+            <img src="../assets/images/artist-quote-icon.png" alt="" style="width:30px; height:24px">
+            <h3>I coach and mentor visual artists, like you, to Create like You Mean It</h3>
+            <h1>Martin Garrix</h1>
           </div>
-          <div class="col-8">
-            <p>As a coach and mentor, my ultimate goal is to motivate visual artists towards inspired actions. I help
+          <div class="col-6 mb-4" style="padding-top: 2rem;">
+            <p style="text-align: left;">As a coach and mentor, my ultimate goal is to motivate visual artists towards
+              inspired actions. I help
               you get you back on track to being the productive, creative, meaningful and authentic artist you truly
               want to be. I support artists in crafting and living a creative life as well as feeling good about
               themselves and their art.</p>
-            <p>As an artist and educator for nearly 30 years, I understand what it takes to create.</p>
-            <a class="btn btn-primary" href="#" role="button">Get started today</a>
+            <br>
+            <p style="text-align: left;" class="mb-4">As an artist and educator for nearly 30 years, I understand what
+              it takes to create.</p>
+            <a class="btn" href="#" role="button">Get started today</a>
           </div>
           <!-- video -->
           <div class="col-10 align-self-center border-1 py-4">
@@ -103,12 +108,13 @@ export default {
     </section>
 
     <!-- quarta sezione: testimonials -->
-    <section id="my_forth_section" class="py-4">
+    <section id="my_forth_section" class="my-4 py-4">
+      
       <div class="my_container_xxl">
         <div class="row debug">
           <div class="col-12">
-            <h3>Testimonials</h3>
-            <h4>Why do people love me?</h4>
+            <h1>Testimonials</h1>
+            <h3>Why do people love me?</h3>
           </div>
           <div class="col-4">
             <div class="card">
@@ -150,7 +156,7 @@ export default {
       </div>
     </section>
 
-    <!-- quinta sezione: artist coaching -->
+    <!-- quinta sezione: artist coaching con cards -->
     <section id="my_fifth_section" class="py-4">
       <div class="my_container_xl">
         <div class="row debug">
@@ -299,15 +305,27 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/scss/colors.scss';
 @import '../assets/scss/structure.scss';
+@import '../assets/scss/font.scss';
+@import '../assets/scss/variables.scss';
 
 * {
   margin: 0 auto;
   text-align: center;
+  /* font-family: sans-serif; */
 }
 
 .debug {
   border: 1px dashed black;
 }
+
+h1 {
+  @include artistic;
+}
+
+.btn {
+  @include button;
+}
+
 
 #app_main {
   width: 100%;
@@ -327,7 +345,8 @@ export default {
 
 #my_first_section {
   width: 100%;
-  background-color: $primary;
+  background-color: $secondary;
+
 
   .row {
     height: 500px;
@@ -398,14 +417,22 @@ export default {
 }
 
 #my_second_section {
+  background-image: url('../src/assets/images/maxcoach-shape-03.png');
+  background-size: 100% 75%;
+  background-repeat: no-repeat;
+  background-position: center;
+
   .row {
     height: 400px;
+    opacity: 1;
   }
 }
 
 #my_third_section {
+  position: relative;
+  z-index: 1;
   .row {
-    height: 700px;
+    /* height: 700px; */
   }
 
   #my_video {
@@ -419,15 +446,31 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .wave_bg {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -5%;
+    background-image: url('../src/assets/images/wave.svg');
+    background-size: cover;
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
 }
 
 #my_forth_section {
+  background-color: $secondary;
+  position: relative;
+  z-index: 1;
+
   .row {
     height: 500px;
   }
 }
 
 #my_fifth_section {
+
   .row {
     /* height: 600px; */
   }

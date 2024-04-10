@@ -10,9 +10,9 @@ export default {
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-lg p-0">
+  <nav class="navbar navbar-expand-lg" id="my_nav">
     <div class="my_container_lg">
-      <div class="row d-flex align-items-center justify-content-between debug">
+      <div class="row d-flex align-items-center justify-content-between mt-3 debug">
         <!-- navbar brand -->
         <div class="col-2 debug">
           <a href="#" class="navbar-brand">
@@ -118,11 +118,18 @@ export default {
   border: 1px dashed black;
 } */
 
+#my_nav{
+  height: 80px;
+  
+}
+
 .my_container_lg {
   @include mixin_container_lg;
 
   .row {
-    height: 60px;
+    display: flex;
+    align-items: center;
+    height: 80px;
   }
 }
 

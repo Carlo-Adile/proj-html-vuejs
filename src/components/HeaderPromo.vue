@@ -34,6 +34,7 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/scss/colors.scss';
 @import '../assets/scss/structure.scss';
+@import '../assets/scss/variables.scss';
 
 * {
   margin: 0 auto;
@@ -66,9 +67,7 @@ export default {
     }
   }
   .btn {
-    color: white;
-    font-weight: 500;
-    background-color: $btn;
+    @include button;
     width: 150px;
   }
 }
