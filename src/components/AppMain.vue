@@ -274,9 +274,54 @@ export default {
 
     <!--  !!!!!!!!!!!!!!
       sesta sezione: artist and tips -->
-    <section id="my_sixth_section">
-      <div class="row debug">
-
+    <section id="my_sixth_section" class="my-4 py-4">
+      <div class="my_container_md">
+        <div class="row debug">
+          <!-- header -->
+          <div class="col-12 my-4">
+            <h1>Artists and Tips</h1>
+            <h3>Latest From The Blog</h3>
+          </div>
+          <!-- left -->
+          <div class="col-3" id="my_left_card">
+            <div class="card border-0 rounded-0">
+              <img src="../assets/images/120084500_197897808368764_8114555493043279565_n.jpg" alt="" class="card-img">
+              <div class="card-body my-2">
+                <p>ARTIST</p>
+                <h5>Brush Strokes Energize Trees Paintings</h5>
+                <span><i class="fa-regular fa-calendar"></i> May 15, 2020</span>
+                <span><i class="fa-regular fa-eye"></i> 688 views</span>
+              </div>
+            </div>
+          </div>
+          <!-- center -->
+          <div class="col-6">
+            <div class="card" id="my_center_card">
+              <div id="my_center_text">
+                <p>ARTIST</p>
+                <h3>Connection Between Self-Portraits and Identity</h3>
+                <span><i class="fa-regular fa-calendar"></i> May 15, 2020</span>
+                <span><i class="fa-regular fa-eye"></i> 397 views</span>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="col-3" id="my_right_card">
+            <div class="card border-0 rounded-0">
+              <img src="../assets/images/artist-blog-01-480x356.jpg" alt="" class="card-img">
+              <div class="card-body mb-2">
+                <p>ARTIST</p>
+                <h5>Brush Strokes Energize Trees Paintings</h5>
+                <span><i class="fa-regular fa-calendar"></i> May 15, 2020</span>
+                <span><i class="fa-regular fa-eye"></i> 688 views</span>
+              </div>
+            </div>
+          </div>
+          <!-- footer -->
+          <div class="col-12 my-2" id="my_tips_footer">
+            <p>Get in details now? <span>View all posts</span> <i class="fa-solid fa-arrow-right"></i></p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -568,7 +613,58 @@ export default {
   background-color: $tertiary;
 
   .row {
-    height: 400px;
+    height: 900px;
+  }
+
+  #my_left_card {
+    @include tips;
+    padding-top: 0rem;
+  }
+  #my_right_card{
+    @include tips;
+    padding-bottom: 7rem;
+  }
+
+  #my_center_card {
+    background-color: transparent;
+    border: none;
+    height: 650px;
+    display: flex;
+    justify-content: end;
+
+    /* bg image */
+    background-image: url('../src/assets/images/artist-blog-02-500x680.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    #my_center_text {
+      width: 400px;
+      /* border: 1px dashed black; */
+      padding: 1rem;
+      padding-bottom: 2rem;
+      align-self: baseline;
+      color: white;
+
+      p,
+      h3,
+      span {
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 1rem;
+        margin-right: 0.75rem;
+      }
+    }
+  }
+  #my_tips_footer{
+    p{
+      text-align: center;
+      font-weight: 500;
+    }
+    span, i{
+      color: $marked;
+      text-decoration: underline;
+    }
   }
 }
 

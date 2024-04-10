@@ -77,6 +77,27 @@
   }
 }
 
+/* vedi sezione 6 */
+@mixin tips{
+  height: 700px;
+  display: flex;
+  align-items: center;
+  p,
+  h5,
+  span {
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+  }
+  .card-img{
+    height: 250px;
+  }
+  img{
+    border: none;
+    border-radius: 0;
+    object-fit: cover;
+  }
+}
+
 /* vedi sezione 7 */
 @mixin events{
   line-height: 300%;
